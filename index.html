@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - O Rei sem Copa... Coroa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eedad5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: url('https://wallpapers.com/images/hd/cristiano-ronaldo-soccer-v8oy2s7vwu1s7gbp.jpg');
+            background-size: cover;
+            background-position: center ;
+            background-attachment: fixed;
+            object-fit: cover;
+        }
+
+        header {
+            background-color: #a00707;
+            color: white;
+            padding: 1px 0;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 290px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .profile_photo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile_photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main_photo_container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 45px;
+            padding: 20px;
+        }
+
+        .main_photo_container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+
+        .main_photo_container img:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 40px 4px 10px rgba(7, 36, 20, 0.1);
+            border-radius: 15px;
+        }
+
+        .bio-text {
+            text-align: justify;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #D35400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #FF6347;
+        }
+
+        footer {
+            background-color: #D35400;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FF6347;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .content-section img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section .text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .main_photo_container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-section img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .video-container {
+    position: relative;  
+    width: 100%;        
+    max-width: 560px; 
+    height: auto;        
+    margin: 0 auto;      
+    cursor: pointer;
+    display: block;     
+}
+
+.video-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgb(240, 179, 14);       
+    opacity: 0.8;
+}
+
+.assista-tambem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;      
+    text-align: center; 
+    margin-top: 10px;   
+}
+
+
+
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile_photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwzXgdgn8PD6v5pEkBwmvwk3AlovKWH4BxiA&s" alt="Cristiano Ronaldo">
+        </div>
+        <h1>Cristiano Ronaldo</h1>
+    </header>
+
+    <div class="main_photo_container">
+        <img src="https://conteudo.imguol.com.br/c/esporte/96/2019/07/16/cristiano-ronaldo-como-jogador-do-sporting-1563322112864_v2_450x450.jpg" alt="Foto 1">
+        <img src="https://lncimg.lance.com.br/uploads/2021/08/27/612931a72dee7.jpeg" alt="Foto 2">
+        <img src="https://s2.glbimg.com/DW5XQY7ejLhTt_YSlsbkZ03J6zY=/620x470/smart/s.glbimg.com/es/ge/f/original/2017/08/13/000_rk1zf.jpg" alt="Foto 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStB6wbW6bFrS8v5a86wqZjNH51ALdKLfhIAw&s" alt="Foto 4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabwkCbTxHOb8V_RVu7QFfZFEzWlRr0Bxpiw&s" alt="Foto 5">
+    </div>
+
+    <div class="container">
+        <p class="bio-text">
+            Cristiano Ronaldo, nascido em 5 de fevereiro de 1985, não é apenas um jogador de futebol; 
+            ele é um verdadeiro fenômeno mundial, uma fonte inesgotável de inspiração para milhões de 
+            pessoas ao redor do mundo. Com uma carreira repleta de feitos impressionantes e um nível 
+            de dedicação sem igual, Ronaldo tem se mostrado imbatível tanto dentro quanto fora de campo.
+        </p>
+
+        <p class="bio-text">
+            Ele é conhecido por sua incansável busca pela perfeição, sua força mental inabalável e seu amor pelo futebol. 
+            Seus feitos em clubes de renome como o Manchester United, Real Madrid, Juventus e sua recente mudança para o Al Nassr 
+            só reafirmam sua posição como um dos maiores jogadores de todos os tempos.
+        </p>
+
+        <h2>Contratação pelo Manchester United</h2>
+        <div class="content-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIt4fVJPKb8MtYrtFWJoiLz9gF9OJaWFzww&s" alt="Cristiano Ronaldo no Sporting">
+            <div class="text">
+                <p>
+                    Em 2003, Cristiano Ronaldo foi contratado pelo Manchester United por um valor recorde na época. 
+                    Após um brilhante desempenho no Sporting CP, o jovem atacante chamou a atenção de Sir Alex Ferguson, 
+                    que não hesitou em levá-lo para a Premier League. Sua chegada ao United marcou o início de uma das carreiras mais ilustres da história do futebol.
+                </p>
+            </div>
+        </div>
+
+        <h2>Três Premier League Seguidas e Primeira Bola de Ouro</h2>
+        <div class="content-section">
+            <img src="https://ge.globo.com/Esportes/foto/0,,16076428-EX,00.jpg" alt="Cristiano Ronaldo Premier League 2008">
+            <div class="text">
+                <p>
+                    Durante sua passagem pelo Manchester United, Ronaldo conquistou três títulos consecutivos da Premier League (2007, 2008 e 2009), 
+                    além de sua primeira Bola de Ouro, em 2008, após uma temporada espetacular. Suas habilidades, velocidade e precisão se destacaram, 
+                    consolidando-o como o melhor jogador do mundo na época. Nesse ano Cristiano simplesmente zerou o futebol, o craque tornou-se 
+                    o segundo jogador a conquistar, na mesma temporada, o prémio de Melhor Jogador do Mundo da FIFA, a Chuteira de Ouro e a Bola de Ouro 
+                    da revista France Football, um feito só realizado pelo avançado brasileiro Ronaldo, em 1997.
+                </p>
+            </div>
+        </div>
+
+        <h2>Transferência para o Real Madrid e Conquistas</h2>
+        <div class="content-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveX2Brae9OUd7Oh2s8PaGprRjAEdSI7EdTA&s" alt="Cristiano Ronaldo Real Madrid">
+            <div class="text">
+                <p>
+                    Em 2009, Cristiano Ronaldo se transferiu para o Real Madrid por uma quantia recorde na época, onde desbancou todos os recordes possíveis. 
+                    Durante sua passagem pelo clube espanhol, ele conquistou quatro Bolas de Ouro (2013, 2014, 2016 e 2017) e levou o time à vitória 
+                    em três Ligas dos Campeões consecutivas (2016, 2017 e 2018), estabelecendo-se como um ícone global do futebol, e considerado 
+                    por muitos o maior ídolo/ícone do clube.
+                </p>
+            </div>
+        </div>
+
+        <h2>Saída do Real Madrid, ida para série A Italiana</h2>
+        <div class="content-section">
+            <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=828,quality=75,fit=pad,format=webp/uploads/2018/07/16/5b4cd96230df0.jpeg" alt="Cristiano Ronaldo Premier League 2008">
+            <div class="text">
+                <p>
+                   Ainda em 2018, Ronaldo deixa o Real Madrid após desentendimentos com as autoridades do clube pela falta de reconhecimento merecido e vai disputar a série A Italiana jogando pela juventus.
+                   Lá conquistou 2x série A; 2x supercopa da Itália; 1x Copa Italiana.
+                   Mostrando que suas habilidades e sua busca pela vitória não se limita à um clube, 
+                   calando todos que acreditaram no fim de sua carreira.
+                </p>
+            </div>
+            </div>
+        
+            <h2>Carreira na Arábia</h2>
+        <div class="content-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4CGrP2K-hFkEL4APVMhhbb7_4ujUn_0OUg&s" alt="Cristiano Ronaldo Premier League 2008">
+            <div class="text">
+                <p>
+                    Em dezembro de 2022, Cristiano Ronaldo deixou o Manchester United e assinou com o Al Nassr, da Arábia Saudita. 
+                    Com um contrato milionário, ele se tornou a maior estrela da liga saudita. No Al Nassr, Ronaldo tem liderado a equipe com gols e desempenhado um papel 
+                    importante na popularização do futebol na região, atraindo atenção global para a Arábia Saudita.
+                </p>
+            </div>
+        </div>
+
+        <h2>Realizações e Conquistas</h2>
+        <ul>
+            <li>5 vezes vencedor da Bola de Ouro, prêmio dado ao melhor jogador do mundo.</li>
+            <li>Campeão da Liga dos Campeões da UEFA 5 vezes, com Manchester United e Real Madrid.</li>
+            <li>Artilheiro histórico da Liga dos Campeões da UEFA e da Seleção Portuguesa.</li>
+            <li>Campeão da Eurocopa 2016 e da Liga das Nações da UEFA em 2019.</li>
+            <li>Artilheiro da história do Futebol, com mais de 900 gols marcados.</li>
+            <li>Considerado o melhor jogador de futebol do mundo por diversos anos e eleito o "Jogador do Século" pela Globe Soccer.</li>
+        </ul>
+
+        <h2>Links Relacionados</h2>
+        <p>Para saber mais sobre Cristiano Ronaldo, acesse as páginas oficiais abaixo:</p>
+        <ul>
+            <li><a href="https://www.cristianoronaldo.com" target="_blank">Site Oficial de Cristiano Ronaldo</a></li>
+            <li><a href="https://www.instagram.com/cristiano/" target="_blank">Instagram de Cristiano Ronaldo</a></li>
+            <li><a href="https://www.youtube.com/@cristiano" target="_blank">Canal no YouTube</a></li>
+        </ul>
+    </div>
+    <a href="https://www.youtube.com/watch?v=ni8PheuLDgs" target="_blank" class="video-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh52QT0fU7KiTXsLQ47KWqtiBSkiM0kkXrUvO1PbYQssBgzimO" alt="Capa do vídeo">
+        <div class="play-button">&#9654;</div> 
+    </a>
+    <div class="assista_tambem" onclick="window.location.href='https://www.youtube.com/watch?v=ni8PheuLDgs'">
+       
+    </div>
+    <a href="https://www.youtube.com/watch?v=iCk2iebosRc" target="_blank" class="video-container">
+        <img src="img/cr7.jpg"Capa do vídeo">
+        <div class="play-button">&#9654;</div> 
+    </a>
+    <div class="assista_tambem" onclick="window.location.href='https://www.youtube.com/watch?v=ni8PheuLDgs'">
+    
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados a Cristiano Ronaldo</p>
+        <p><a href="https://www.cristianoronaldo.com" target="_blank">Visite o site oficial de Cristiano Ronaldo</a></p>
+    </footer>
+    
+
+</body>
+</html>
